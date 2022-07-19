@@ -1,12 +1,12 @@
 enum DeviceType {
-  smokeDetector(labelName: 'Smoke detector', assetPath: 'assets/icons/smoke_detector.svg'),
-  waterLeakDetector(labelName: 'Water leak detector', assetPath: 'assets/icons/water_leak_detector.svg');
+  smokeDetector(labelText: 'Smoke detector', assetPath: 'packages/ui_components/assets/icons/smoke_detector.svg'),
+  waterLeakDetector(labelText: 'Water leak detector', assetPath: 'packages/ui_components/assets/icons/water_leak_detector.svg');
 
-  const DeviceType({required this.labelName, required this.assetPath});
+  const DeviceType({required this.labelText, required this.assetPath});
 
-  final String labelName;
+  final String labelText;
   final String assetPath;
 
   @override
-  String toString() => labelName;
+  String toString() => labelText;
 }

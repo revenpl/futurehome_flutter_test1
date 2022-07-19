@@ -29,8 +29,12 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_localizations:
+    sdk: flutter
   ui_components:
     path: packages/ui_components
+  flutter_svg: 1.1.1+1
+  google_fonts: 3.0.1
 
 dev_dependencies:
   flutter_test:
@@ -40,8 +44,15 @@ dev_dependencies:
   flutter_gen_runner: 4.3.0
 
 flutter:
-
   uses-material-design: true
-
+  generate: true
   assets:
     - assets/icons/
+
+flutter_gen:
+  integrations:
+    flutter_svg: true
+  colors:
+    enabled: true
+    inputs:
+      - assets/colors/colors.xml

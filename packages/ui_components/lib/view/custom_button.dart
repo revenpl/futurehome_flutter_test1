@@ -7,9 +7,12 @@ class CustomButton extends StatelessWidget {
       required this.label,
       this.ending,
       this.onPressed,
-      this.height = 24.0,
+      this.height = defaultButtonHeight,
       this.padding = const EdgeInsets.fromLTRB(10, 0, 10, 1)})
       : super(key: key);
+
+  static const defaultSpacing = 8.0;
+  static const defaultButtonHeight = 24.0;
 
   final Widget? leading;
   final Widget label;
@@ -21,11 +24,11 @@ class CustomButton extends StatelessWidget {
   List<Widget> get _widgets {
     List<Widget> widgetList = [];
     if (leading != null) {
-      widgetList.addAll([leading!, const SizedBox(width: 8)]);
+      widgetList.addAll([leading!, const SizedBox(width: defaultSpacing)]);
     }
     widgetList.add(label);
     if (ending != null) {
-      widgetList.addAll([const SizedBox(width: 8), ending!]);
+      widgetList.addAll([const SizedBox(width: defaultSpacing), ending!]);
     }
     return widgetList;
   }
@@ -36,7 +39,7 @@ class CustomButton extends StatelessWidget {
       height: height,
       child: TextButton(
         onPressed: onPressed,
-        child: Row(children: _widgets),
+        child: Row(crossAxisAlignment: CrossAxisAlignment.center, children: _widgets),
       ),
     );
   }

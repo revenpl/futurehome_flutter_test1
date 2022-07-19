@@ -1,0 +1,15 @@
+{
+  "common_area": "Common area",
+  "contact": "contact",
+  "room": "room",
+  "device": "device",
+  "notes": "notes",
+  "edit": "edit",
+  "delete": "delete",
+  "unpair": "unpair",
+  "identify":"identify",
+  "ping": "ping",
+  "sensitivity": "sensitivity",
+  "test_siren": "test siren",
+  "timeline": "timeline"
+}

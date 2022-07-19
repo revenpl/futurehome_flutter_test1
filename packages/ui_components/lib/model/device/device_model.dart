@@ -1,22 +1,22 @@
-import 'package:ui_components/model/device_configuration_status.dart';
-import 'package:ui_components/model/device_connection_status.dart';
-import 'package:ui_components/model/device_security_status.dart';
-import 'package:ui_components/model/device_type.dart';
+import 'package:ui_components/model/device/device_configuration_status.dart';
+import 'package:ui_components/model/device/device_connection_status.dart';
+import 'package:ui_components/model/device/device_security_status.dart';
+import 'package:ui_components/model/device/device_type.dart';
 import 'package:ui_components/model/list_entity.dart';
 
 class DeviceModel extends ListEntity {
   final DeviceType type;
   final String? address;
-  final String? deviceId;
-  final DeviceConfigurationStatus? deviceConfigurationStatus;
-  final DeviceConnectionStatus? deviceConnectionStatus;
-  final DeviceSecurityStatus? deviceSecurityStatus;
+  final String? id;
+  final DeviceConfigurationStatus? configurationStatus;
+  final DeviceConnectionStatus? connectionStatus;
+  final DeviceSecurityStatus? securityStatus;
 
   DeviceModel(
       {required this.type,
       this.address,
-      this.deviceId,
-      this.deviceConfigurationStatus,
-      this.deviceConnectionStatus,
-      this.deviceSecurityStatus});
+      this.id,
+      this.configurationStatus,
+      this.connectionStatus,
+      this.securityStatus});
 }

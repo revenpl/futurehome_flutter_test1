@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="chip_background">#2D3436</color>
+    <color name="black_font">#2D3436</color>
+    <color name="card_border">#03A9F1</color>
+    <color name="custom_orange">#F18303</color>
+</resources>
