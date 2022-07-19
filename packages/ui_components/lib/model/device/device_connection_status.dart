@@ -1,0 +1,1 @@
+enum DeviceConnectionStatus { online, offline }

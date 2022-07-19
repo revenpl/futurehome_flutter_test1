@@ -1,0 +1,1 @@
+enum DeviceConfigurationStatus { configured, notConfigured }

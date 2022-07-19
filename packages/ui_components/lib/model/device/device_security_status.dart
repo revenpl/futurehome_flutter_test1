@@ -1,0 +1,1 @@
+enum DeviceSecurityStatus { tampered, secure }
