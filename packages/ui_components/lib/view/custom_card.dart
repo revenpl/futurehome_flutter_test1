@@ -61,7 +61,7 @@ class CustomCard extends StatelessWidget {
                     child: Table(
                       children: [
                         _getTopRow(data: data, columnCount: columnCount),
-                        ensureColumnsMatch(
+                        TableUtils.ensureColumnsMatch(
                           expectedColumns: columnCount,
                           tableRow: const TableRow(children: [SizedBox(height: defaultItemSpace)]),
                         ),

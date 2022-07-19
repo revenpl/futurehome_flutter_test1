@@ -6,7 +6,7 @@ import 'package:ui_components/view/custom_table_cell.dart';
 
 List<TableRow> getPersonDetails({required PersonModel person, required int columnCount}) {
   return [
-    ensureColumnsMatch(
+    TableUtils.ensureColumnsMatch(
       expectedColumns: columnCount,
       tableRow: TableRow(
         children: [

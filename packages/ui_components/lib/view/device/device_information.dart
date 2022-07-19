@@ -9,7 +9,7 @@ import 'package:ui_components/utils/table_utils.dart';
 import 'package:ui_components/view/custom_table_cell.dart';
 
 TableRow getDeviceInformation({required DeviceModel device, required int columnCount}) {
-  return ensureColumnsMatch(
+  return TableUtils.ensureColumnsMatch(
     expectedColumns: columnCount,
     tableRow: TableRow(
       children: [

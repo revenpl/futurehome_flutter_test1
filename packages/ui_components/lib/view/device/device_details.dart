@@ -5,7 +5,7 @@ import 'package:ui_components/view/custom_table_cell.dart';
 
 List<TableRow> getDeviceDetails({required DeviceModel device, required int columnCount}) {
   return [
-    ensureColumnsMatch(
+    TableUtils.ensureColumnsMatch(
       expectedColumns: columnCount,
       tableRow: TableRow(
         children: [
@@ -14,7 +14,7 @@ List<TableRow> getDeviceDetails({required DeviceModel device, required int colum
         ],
       ),
     ),
-    ensureColumnsMatch(
+    TableUtils.ensureColumnsMatch(
       expectedColumns: columnCount,
       tableRow: TableRow(children: [
         CustomTableCell(label: 'device ID'.toUpperCase(), isBold: true),
